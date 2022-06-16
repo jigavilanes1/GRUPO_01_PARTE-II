@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Eventos</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../img/fav.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<link href="../vendor/aos/aos.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../css/Parte II/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.7.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<body onload="checkCookies()">
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <a href="homeParteII.html"><img src="../img/logo.png" alt="" class="img-fluid rounded-circle"></a>
+        <h1 class="text-light">Events</h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#reaccionar1" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Reaccionar</span></a></li>
+          <li><a href="#atributos" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Atributos</span></a></li>
+          <li><a href="#asignarEventos" class="nav-link scrollto"><i class="bx bxs-bank"></i> <span>Asignar Eventos</span></a></li>
+          <li><a href="#eventoOnload" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Eventos Onload onUnload</span></a></li>
+          <li><a href="#eventoOnchange" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span>Evento Onchange</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Eventos</h1>
+      <p>Reaccionar a eventos <span class="typed" data-typed-items="HTML usando JavaScript"></span></p>
+      <br>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="reaccionar1" class="about">
+      <div class="container col-sm-12 row justify-content-around" data-aos="fade-right" >
+        <div class="section-title">
+          <h2>REACCIONAR</h2>
+          <p>Un JavaScript se puede ejecutar cuando ocurre un evento, como cuando un usuario hace clic en un elemento HTML. Para ejecutar código cuando un usuario hace clic en un elemento, agregue código JavaScript a un atributo de evento HTML:</p>
+          <br>
+          <div class="col-lg-12" style="border-style: solid;">
+            <p>onclick=JavaScript</p>
+          </div>
+          <br>
+          <p>Ejemplos de eventos HTML:</p>
+            <ul>
+              <li>Cuando un usuario hace clic con el mouse</li>
+              <li>Cuando una página web ha cargado</li>
+              <li>Cuando se ha cargado una imagen</li>
+              <li>Cuando el mouse se mueve sobre un elemento</li>
+              <li>Cuando se cambia un campo de entrada</li>
+              <li>Cuando se envía un formulario HTML</li>
+              <li>Cuando un usuario pulsa una tecla</li>
+            </ul>
+            <p>En este ejemplo, el contenido del &#60;h1> elemento cambia cuando un usuario hace clic en él:</p>
+        </div>
+        <h2>Ejemplo 1</h2>
+        <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;!DOCTYPE html> <br>
+                &#60;html> <br>
+                &#60;body> <br>
+                &#60;h2>Eventos HTML JavaScript/h2> <br>
+                &#60;h2 onclick="this.innerHTML='El texto Cambio por un evento'">Da clic en este Text/h2> <br>
+                &#60;/body> <br>
+                &#60;/html> <br>
+            </p>
+          </div>
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>Eventos HTML JavaScript</h2>
+                <p>Da clic en el texto de abajo</p>
+                <h3 onclick="this.innerHTML='El texto cambio por un evento HTML!'">Da clic en este Texto!</h3>
+          </div> 
+          <br>
+          <h2>Ejemplo 2</h2>
+          <p>En este ejemplo, se llama a una función desde el controlador de eventos:</p>
+          <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;body><br>
+                &#60;h2>JavaScript HTML Events/h2><br>
+                &#60;h2 onclick="changeText(this)">Da clic en el texto de abajo/h2><br>
+                &#60;script><br>
+                function changeText(id) {<br>
+                  id.innerHTML = "El texto cambio por un evento HTML";<br>
+                }<br>
+                &#60;/script><br>
+                &#60;/body><br>
+            </p>
+          </div>
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>Eventos HTML JavaScript</h2>
+                <p>Da clic en el texto de abajo</p>
+                <h3 onclick="eje1(this)">Da clic en este Texto!</h3>
+          </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="atributos" class="portfolio section-bg">
+      <div class="container col-sm-12 row justify-content-around" data-aos="fade-left">
+
+        <div class="section-title">
+          <h2>Atributos</h2>
+          <p>Para asignar eventos a elementos HTML, puede usar atributos de eventos. </p>
+        </div>
+        <h2>Ejemplo</h2>
+        <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;style><br>
+                &#60;body><br>
+                &#60;h2>Eventos - Atributos HTML Javascript</h2>
+                &#60;p>Clic en el boton para desplegar fecha</p>
+                &#60;button onclick="displayDate()">Mostrar Fecha</button>
+                &#60;script>
+                function displayDate() {
+                  document.getElementById("demo").innerHTML = Date();
+                }<br>
+                &#60;/script><br>
+                &#60;p id=">/p><br>
+                &#60;/body><br>
+            </p>
+          </div>
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>Eventos - Atributos HTML  Javascript</h2>
+                <p>Clic en el boton para desplegar fecha</p>
+                <button onclick="displayDate()">Mostrar Fecha</button>
+                <p id="ejem1"></p>
+          </div>
+      </div>
+    </section><!-- End Facts Section -->
+    <!-- ======= Portfolio Section ======= -->
+    <section id="asignarEventos" class="facts">
+      <div class="container col-sm-12 row justify-content-around" data-aos="fade-right">
+
+        <div class="section-title">
+          <h2>Asignar eventos utilizando el HTML DOM</h2>
+          <p>El HTML DOM le permite asignar eventos a elementos HTML usando JavaScript:
+          </p>
+        </div>
+        <h2>Ejemplo</h2>
+        <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;style><br>
+                &#60;h2>Asignar eventos con HTML DOM/h2><br>
+                &#60;p>Clic en "mostrar Fecha" para desplegar el texto./p><br>
+                &#60;button id="myBtn">Mostrar Fecha/button><br>
+                &#60;p id="demo">Mi texto se desplegará aquí/p><br>
+                &#60;script><br>
+                document.getElementById("myBtn").onclick = displayDate;<br>
+                function displayDate() {<br>
+                  document.getElementById("demo").innerHTML = Date();<br>
+                }<br>
+                &#60;/script><br>
+            </p>
+          </div>
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>Asignar eventos con HTML DOM</h2>
+                <p>Clic en "mostrar Fecha" para desplegar el texto</p>
+                <p><button id="myBtn">Mostrar Fecha</button></p> 
+                <p id="demo1">Mi texto se desplegará aquí</p>
+          </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+    <section id="eventoOnload" class="portfolio section-bg">
+      <div class="container col-sm-12 row justify-content-around" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-title">
+          <h2>Los eventos onload y onunload</h2>
+          <p>Los eventos onloady onunloadse activan cuando el usuario entra o sale de la página. El onloadevento se puede utilizar para comprobar el tipo de navegador y la versión del navegador del visitante, y cargar la versión adecuada de la página web en función de la información. Los eventos onloady onunloadse pueden utilizar para tratar con las cookies.</p>
+        </div>
+        <h2>Ejemplo</h2>
+        <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;body onload="checkCookies()"><br>
+                &#60;h2>Eventos Onload y onUnload/h2><br>
+                &#60;p>Debajo se despliega la hora en que fue refrescada la página./p><br>
+                &#60;p id="demo">/p><br>
+                &#60;script><br>
+                function checkCookies() {<br>
+                  var text = "";<br>
+                  document.getElementById("demo").innerHTML = text;<br>
+                }<br>
+                &#60;/script><br>
+                &#60;/body><br>
+            </p>
+          </div>
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>Eventos Onload y onUnload</h2>
+                <p>Debajo se despliega la hora en que fue refrescada la página.</p>
+                <p id="demo4"></p>
+          </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="eventoOnchange" class="facts">
+      <div class="container col-sm-12 row justify-content-around" data-aos="fade-right">
+
+        <div class="section-title">
+          <h2>El evento onchange</h2>
+          <p>El onchangeevento se usa a menudo en combinación con la validación de campos de entrada. A continuación se muestra un ejemplo de cómo utilizar onchange. La upperCase() función se llamará cuando un usuario cambie el contenido de un campo de entrada.</p>
+        </div>
+        <h2>Ejemplo</h2>
+        <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;body><br>
+                &#60;h2>Evento onchange en JavaScript/h2><br>
+                Ingrese su Nombre:  &#60;input type="text" id="fname" onchange="upperCase()"><br>
+                &#60;p>Al ingresar cualquier caracter este cambiará a mayúscula al salir del cuador de texto../p><br>
+                &#60;script><br>
+                function upperCase1() {<br>
+                  const x = document.getElementById("fname");<br>
+                  x.value = x.value.toUpperCase();<br>
+                }<br>
+                &#60;/script><br>
+                &#60;/body><br>
+            </p>
+          </div>
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>Evento onchange en JavaScript</h2>
+                Ingrese su Nombre: <input type="text" id="fname1" onchange="upperCase1()">
+                <p>Al ingresar cualquier caracter este cambiará a mayúscula al salir del cuador de texto.</p>
+          </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+    
+      <section id="eventoEjemplo" class="portfolio section-bg">
+      <div class="container col-sm-12 row justify-content-around" data-aos="fade-left">
+        <div class="section-title">
+          <h2>Los eventos onmouseover y onmouseout</h2>
+          <p>Los eventos onmouseovery onmouseoutse pueden usar para activar una función cuando el usuario pasa el mouse sobre o fuera de un elemento HTML:</p>
+        </div>
+        <h2>Ejemplo</h2>
+        <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;p>Eventos onmouseover y onmouseout/p><br>
+                &#60;div onmouseover="mOver(this)" onmouseout="mOut(this)" <br>
+                style="background-color:#D94A38;width:120px;<br>
+                height:20px;padding:40px;"><br>
+                EVENTO ONMOUSE/div><br>
+                &#60;script><br>
+                function mOver(obj) {<br>
+                  obj.innerHTML = "Gracias"<br>
+                }<br>
+                function mOut(obj) {<br>
+                  obj.innerHTML = "Poner el mouse encima"<br>
+                }<br>
+                &#60;/script><br>
+            </p>
+          </div>
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>Eventos onmouseover y onmouseout</h2>
+                <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#0BC4A3;width:250px;height:20px;padding:40px; ">
+                EVENTO ONMOUSE
+                </div>
+          </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+    <section id="eventoEjemplo" class="facts">
+      <div class="container col-sm-12 row justify-content-around" data-aos="fade-right">
+
+        <div class="section-title">
+          <h2>Los eventos onmousedown, onmouseup y onclick</h2>
+          <p>Los eventos onmousedown, onmouseupy onclickson todos partes de un clic del mouse. Primero, cuando se hace clic en un botón del mouse, se activa el evento onmousedown, luego, cuando se suelta el botón del mouse, se activa el evento onmouseup, finalmente, cuando se completa el clic del mouse, se activa el evento onclick.</p>
+        </div>
+        <h2>Ejemplo</h2>
+        <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;div onmousedown="mDown(this)" onmouseup="mUp(this)"<br>
+                style="background-color:#D94A38;width:90px;
+                height:20px;padding:40px;"><br>
+                Presiona/div><br>
+                &#60;script><br>
+                function mDown(obj) {<br>
+                  obj.style.backgroundColor = "#1ec5e5";<br>
+                  obj.innerHTML = "Sueltame";<br>
+                }<br>
+                function mUp(obj) {<br>
+                  obj.style.backgroundColor="#D94A38";<br>
+                  obj.innerHTML="Gracias";<br>
+                }<br>
+                &#60;/script><br>
+            </p>
+          </div>
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>eventos onmousedown, onmouseup y onclick</h2>
+                <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color:#D94A38;width:250px;height:20px;padding:40px;"> Presiona</div>
+          </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+      <section id="eventoEjemplo" class="portfolio section-bg">
+      <div class="container col-sm-12 row justify-content-around" data-aos="fade-left">
+        <div class="section-title">
+          <h2>Más ejemplos</h2>
+        </div>
+        <h2>Ejemplo Onfocus</h2>
+        <div class="col-lg-4" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;script><br>
+                function myFunction(x) {<br>
+                  x.style.background = "#16D33E";<br>
+                }<br>
+                &#60;/script><br>
+                &#60;/head><br>
+                &#60;body><br>
+                &#60;p>Evento onfocus <br> 
+                Ingresa tu nombre: &#60;input type="text" onfocus="myFunction(this)"><br>
+                &#60;p>Cuando se ingresa al cuadro de texto este cambia de color../p><br>
+                &#60;/body><br>
+            </p>
+          </div>
+          <div class="col-lg-6 " style="border-style: solid;">
+                <h2>Evento onfocus</h2>
+                Ingresa tu nombre: <input type="text" onfocus="myFunction1(this)">
+                <p>Cuando se ingresa al cuadro de texto este cambia de color.</p>
+          </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        <strong><span>Grupo 1</span></strong>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+  <script src="../vendor/purecounter/purecounter.js"></script>
+  <script src="../vendor/aos/aos.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../vendor/typed.js/typed.min.js"></script>
+  <script src="../vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../js/mainp2.js"></script>
+  <script>
+    function eje1(id){
+      id.innerHTML = "El texto cambio por un evento HTML";
+    }
+    function displayDate() {
+      document.getElementById("ejem1").innerHTML = Date();
+    }
+    document.getElementById("myBtn").onclick = displayDate1;
+
+    function displayDate1() {
+      document.getElementById("demo1").innerHTML = Date();
+    }
+    function checkCookies() {
+      var text = "";
+      text = Date();
+      document.getElementById("demo4").innerHTML = text;
+    }
+    function upperCase1() {
+      const x = document.getElementById("fname1");
+      x.value = x.value.toUpperCase();
+    }
+    function mOver(obj) {
+      obj.innerHTML = "Gracias"
+    }
+
+    function mOut(obj) {
+      obj.innerHTML = "Pon el mouse encima";
+      obj.style.backgroundColor = "#16D33E";
+    }
+    function mDown(obj) {
+      obj.style.backgroundColor = "#468CD7";
+      obj.innerHTML = "Sueltame";
+    }
+
+    function mUp(obj) {
+      obj.style.backgroundColor="#DE5DF2";
+      obj.innerHTML="Gracias";
+    }
+    function myFunction1(x) {
+      x.style.background = "#16D33E";
+    }
+  </script>
+</body>
+</html>
