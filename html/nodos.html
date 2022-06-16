@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Nodos</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../img/fav.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../vendor/aos/aos.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../css/Parte II/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.7.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <a href="homeParteII.html"><img src="../img/logo.png" alt="" class="img-fluid rounded-circle"></a>
+        <h1 class="text-light">Grupo 1</h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#HTML" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Creacion de Nodos</span></a></li>
+          <li><a href="#iB" class="nav-link scrollto"><i class="bx bx-message-square-add"></i> <span>Creacion con insertBefore()</span></a></li>
+          <li><a href="#Eliminación" class="nav-link scrollto"><i class="bx bx-message-square-minus"></i> <span>Eliminación de elementos HTML</span></a></li>
+          <li><a href="#NS" class="nav-link scrollto"><i class="bx bx-message-rounded-minus"></i> <span>Eliminación de un Child Node</span></a></li>
+          <li><a href="#Sustitución" class="nav-link scrollto"><i class="bx bx-transfer-alt"></i> <span>Sustitucion de elementos HTML</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Nodos</h1>
+      <h1>JavaScript HTML DOM</h1>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="HTML" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-right">
+          <h2>Creación de nuevos elementos HTML (nodos)</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="../img/node.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <p>Un nodo en el DOM es cualquier etiqueta del cuerpo, como un párrafo, el mismo body o incluso las etiquetas de una lista. Con Javascript podemos modificar estas etiquetas con el uso de eventos.</p>
+            <p>Para agregar un nuevo elemento al HTML DOM, primero debe crear el elemento (nodo de elemento) y luego agregarlo a un elemento existente.De la siguiente manera:</p>
+            <p style="text-align:left;background: black;color: white;">&#60;div id="div1">
+  &#60;p id="p1">Esto es un parrafo.&#60;/p><br>
+  &#60;p id="p2">Este es otro parrafo.&#60;/p><br>
+&#60;/div><br>
+&#60;script><br>
+&nbsp;&nbsp;&nbsp;&nbsp;const para = document.createElement("p");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;const node = document.createTextNode("Esto es nuevo.");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;para.appendChild(node);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;const element = document.getElementById("div1");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;element.appendChild(para);<br>
+&#60;/script></p>
+          </div>
+          <div data-aos="fade-right">
+          <br>
+          <h3>Ejemplo</h3>
+          </div>
+          <div class="col-lg-6 pl-1" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+              <p> &#60;!DOCTYPE html><br>
+                  &#60;html><br>
+                  &#60;body><br>
+                  &#60;h2>JavaScript HTML DOM&#60;/h2><br>
+                  &#60;p>Añadir un nuevo elemento HTML.&#60;/p><br>
+                  &#60;div id="div1"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&#60;p id="p1">Esto es un parrafo.&#60;/p><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&#60;p id="p2">Este es otro parrafo.&#60;/p><br>
+                  &#60;/div><br>
+                  &#60;script><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;const para = document.createElement("p");<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;const node = document.createTextNode("Esto es nuevo.");<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;para.appendChild(node);<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;const element = document.getElementById("div1");<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;element.appendChild(para);<br>
+                  &#60;/script><br>
+                  &#60;/body><br>
+                  &#60;/html></p><br>
+            </div>
+                <div class="col-lg-5" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+                  <h2>JavaScript HTML DOM</h2>
+                  <p>Añadir un nuevo elemento HTML.</p>
+                  <div id="div1">
+                  <p id="p1">Esto es un parrafo.</p>
+                  <p id="p2">Este es otro parrafo.</p>
+                  </div>
+                  <input style="color:black;" type="button" value="Probar" onclick="Ej1();">
+                  <br>
+                </div>
+          <div data-aos="fade-right">
+            <br>
+            <h3>Explicación</h3>
+            <table class="table table-striped" style="font-size:14px">
+              <thead>
+                <tr>
+                  <th scope="col">Linea de Código</th>
+                  <th scope="col">Función</th>
+                </tr>
+              </thead>
+              <tr>
+                <th scope="col">const para = document.createElement("p");</th>
+                <th scope="col">Este código crea un nuevo elemento &#60;p></th>
+              </tr>
+              <tr>
+                <th scope="col">const node = document.createTextNode("Esto es nuevo.");</th>
+                <th scope="col">Para agregar texto al elemento &#60;p>, primero debe crear un nodo de texto. Este código crea un nodo de texto</th>
+              </tr>
+              <tr>
+                <th scope="col">para.appendChild(node);</th>
+                <th scope="col">Luego debe agregar el nodo de texto al elemento &#60;p></th>
+              </tr>
+              <tr>
+                <th scope="col">const element = document.getElementById("div1");</th>
+                <th scope="col">Encontrar un elemento existente.</th>
+              </tr>
+              <tr>
+                <th scope="col">element.appendChild(para);</th>
+                <th scope="col">Agregar el nuevo elemento a un elemento existente.</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="iB" class="facts">
+      <div class="container">
+        <div class="row">
+        <div class="section-title" data-aos="fade-right">
+          <h2>Creación de nuevos elementos HTML - insertBefore()</h2>
+        </div>
+          <div data-aos="fade-right">
+            <p>El método appendChild() del ejemplo anterior, agregó el nuevo elemento como el último hijo del padre.</p>
+            <p>Si no quieres eso, puedes usar el método insertBefore()</p>
+            <p style="text-align:left;background: black;color: white;">&#60;div id="div1">
+  &#60;p id="p1">Esto es un parrafo.&#60;/p><br>
+  &#60;p id="p2">Este es otro parrafo.&#60;/p><br>
+&#60;/div><br>
+&#60;script><br>
+&nbsp;&nbsp;&nbsp;&nbsp;const para = document.createElement("p");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;const node = document.createTextNode("Esto es nuevo.");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;para.appendChild(node);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;const element = document.getElementById("div1");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;const child = document.getElementById("p1");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;element.insertBefore(para, child);<br>
+&#60;/script></p><br></div>
+          <div data-aos="fade-right">
+          <br>
+          <h3>Ejemplo</h3>
+          </div>
+          <div class="col-lg-6 pl-1" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+              <p> &#60;!DOCTYPE html><br>
+                  &#60;html><br>
+                  &#60;body><br>
+                  &#60;h2>JavaScript HTML DOM&#60;/h2><br>
+                  &#60;p>Añadir un nuevo elemento HTML.&#60;/p><br>
+                  &#60;div id="div1"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&#60;p id="p1">Esto es un parrafo.&#60;/p><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&#60;p id="p2">Este es otro parrafo.&#60;/p><br>
+                  &#60;/div><br>
+                  &#60;script><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;const para = document.createElement("p");<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;const node = document.createTextNode("Esto es nuevo.");<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;para.appendChild(node);<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;const element = document.getElementById("div1");<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;const child = document.getElementById("p1");<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;element.insertBefore(para,child);<br>
+                  &#60;/script><br>
+                  &#60;/body><br>
+                  &#60;/html></p><br>
+            </div>
+                <div class="col-lg-5" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+                  <h2>JavaScript HTML DOM</h2>
+                  <p>Añadir un nuevo elemento HTML.</p>
+                  <div id="div2">
+                  <p id="p3">Esto es un parrafo.</p>
+                  <p id="p4">Este es otro parrafo.</p>
+                  </div>
+                  <input style="color:black;" type="button" value="Probar" onclick="Ej2();">
+                  <br>
+                </div>
+      </div>
+    </div>
+    </section><!-- End Facts Section -->
+
+    <section id="Eliminación" class="facts">
+      <div class="container">
+        <div class="row">
+        <div class="section-title" data-aos="fade-right">
+          <h2>Eliminación de elementos HTML existentes</h2>
+        </div>
+          <div data-aos="fade-right">
+            <p>Para eliminar un elemento HTML, utilice el método remove()</p>
+            <p style="text-align:left;background: black;color: white;">&#60;div>
+  &#60;p id="p1">Esto es un parrafo.&#60;/p><br>
+  &#60;p id="p2">Este es otro parrafo.&#60;/p><br>
+&#60;/div><br>
+&#60;script><br>
+&nbsp;&nbsp;&nbsp;&nbsp;const elmnt = document.getElementById("p1"); <br>
+&nbsp;&nbsp;&nbsp;&nbsp;elmnt.remove();<br>
+&#60;/script></p></div>
+          <div data-aos="fade-right">
+          
+          <h3>Ejemplo</h3>
+          </div>
+          <div class="col-lg-6 pl-1" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+              <p> &#60;!DOCTYPE html><br>
+                  &#60;html><br>
+                  &#60;body><br>
+                  &#60;h2>JavaScript HTML DOM&#60;/h2><br>
+                  &#60;h3>Eliminar un elemento HTML.&#60;/h3><br>
+                  &#60;div><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&#60;p id="p1">Esto es un parrafo.&#60;/p><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&#60;p id="p2">Este es otro parrafo.&#60;/p><br>
+                  &#60;/div><br>
+                  &#60;button onclick="myFunction()">Eliminar Elemento&#60;/button><br>
+                  &#60;script><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;function myFunction() {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("p1").remove();<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                  &#60;/script><br>
+                  &#60;/body><br>
+                  &#60;/html></p><br>
+            </div>
+                <div class="col-lg-5" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+                  <h2>JavaScript HTML DOM</h2>
+                  <h3>Eliminar un elemento HTML.</h3>
+                  <div>
+                  <p id="p5">Esto es un parrafo.</p>
+                  <p id="p6">Este es otro parrafo.</p>
+                  </div>
+                  <input style="color:black;" type="button" value="Eliminar Elemento" onclick="Ej3();">
+                  <br>
+                </div>
+                <div data-aos="fade-right">
+            <br>
+            <h3>Explicación</h3>
+            <table class="table table-striped" style="font-size:14px">
+              <thead>
+                <tr>
+                  <th scope="col">Linea de Código</th>
+                  <th scope="col">Función</th>
+                </tr>
+              </thead>
+              <tr>
+                <th scope="col">&#60;div><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&#60;p id="p1">Esto es un parrafo.&#60;/p><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&#60;p id="p2">Este es otro parrafo.&#60;/p><br>
+  &#60;/div>
+</div></th>
+                <th scope="col">El documento HTML contiene un elemento &#60;div> con dos nodos secundarios (dos elementos &#60;p>)</th>
+              </tr>
+              <tr>
+                <th scope="col">const elmnt = document.getElementById("p1");</th>
+                <th scope="col">Busca el elemento que se desea eliminar</th>
+              </tr>
+              <tr>
+                <th scope="col">elmnt.remove();</th>
+                <th scope="col">Luego ejecuta el método remove() en ese elemento</th>
+              </tr>
+            </table>
+            <p style="background-color:lightpink;color:darkred">El método remove() no funciona en navegadores más antiguos, en su lugar se puede usar el removeChild().</p>
+          </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="NS" class="facts">
+      <div class="container">
+        <div class="row">
+        <div class="section-title" data-aos="fade-right">
+          <h2>Eliminación de un Child Node</h2>
+        </div>
+          <div data-aos="fade-right">
+            <p>Para los navegadores que no admiten el método remove(), debe encontrar el nodo principal para eliminar un elemento</p>
+            <p style="text-align:left;background: black;color: white;">&#60;div id="div1">
+  &#60;p id="p1">Esto es un parrafo.&#60;/p><br>
+  &#60;p id="p2">Este es otro parrafo.&#60;/p><br>
+&#60;/div><br>
+&#60;script><br>
+&nbsp;&nbsp;&nbsp;&nbsp;const parent = document.getElementById("div1");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;const child = document.getElementById("p1");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;parent.removeChild(child);<br>
+&#60;/script></p><br></div>
+          <div data-aos="fade-right">
+          <br>
+          <h3>Ejemplo</h3>
+          </div>
+          <div class="col-lg-6 pl-1" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+              <p> &#60;!DOCTYPE html><br>
+                  &#60;html><br>
+                  &#60;body><br>
+                  &#60;h2>JavaScript HTML DOM&#60;/h2><br>
+                  &#60;h3>Eliminar un elemento Child.&#60;/h3><br>
+                  &#60;div id="div1"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&#60;p id="p1">Esto es un parrafo.&#60;/p><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&#60;p id="p2">Este es otro parrafo.&#60;/p><br>
+                  &#60;/div><br>
+                  &#60;script><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;const parent = document.getElementById("div1");<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;const child = document.getElementById("p1");<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;parent.removeChild(child);<br>
+                  &#60;/script><br>
+                  &#60;/body><br>
+                  &#60;/html></p><br>
+            </div>
+                <div class="col-lg-5" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+                  <h2>JavaScript HTML DOM</h2>
+                  <h3>Eliminar un elemento Child.</h3>
+                  <div id="div3">
+                  <p id="p7">Esto es un parrafo.</p>
+                  <p id="p8">Este es otro parrafo.</p>
+                  </div>
+                  <input style="color:black;" type="button" value="Probar" onclick="Ej4();">
+                  <br>
+                </div>
+                <div data-aos="fade-right">
+            <br>
+            <h3>Explicación</h3>
+            <table class="table table-striped" style="font-size:14px">
+              <thead>
+                <tr>
+                  <th scope="col">Linea de Código</th>
+                  <th scope="col">Función</th>
+                </tr>
+              </thead>
+              <tr>
+                <th scope="col">&#60;div id="div1"><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&#60;p id="p1">Esto es un parrafo.&#60;/p><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&#60;p id="p2">Este es otro parrafo.&#60;/p><br>
+  &#60;/div>
+</div></th>
+                <th scope="col">El documento HTML contiene un elemento &#60;div> con dos nodos secundarios (dos elementos &#60;p>)</th>
+              </tr>
+              <tr>
+                <th scope="col">const parent = document.getElementById("div1");</th>
+                <th scope="col">Encuentre el elemento con id="div1"</th>
+              </tr>
+              <tr>
+                <th scope="col">const child = document.getElementById("p1");</th>
+                <th scope="col">Encuentre el elemento &#60;p> con id="p1"</th>
+              </tr>
+              <tr>
+                <th scope="col">parent.removeChild(child);</th>
+                <th scope="col">Elimina el hijo del padre</th>
+              </tr>
+              <tr>
+                <th scope="col">const child = document.getElementById("p1");<br>
+child.parentNode.removeChild(child);</th>
+                <th scope="col">Otra Solución: Buscar el elemento secundario que se desea eliminar y usar la propiedad parentNode para encontrar el elemento principal
+</th>
+              </tr>
+
+            </table>
+          </div>
+      </div>
+    </div>
+    </section>
+    <section id="Sustitución" class="facts">
+      <div class="container">
+        <div class="row">
+        <div class="section-title" data-aos="fade-right">
+          <h2>Sustitución de elementos HTML</h2>
+        </div>
+          <div data-aos="fade-right">
+            <p>Para reemplazar un elemento en HTML DOM, se usa el método replaceChild():</p>
+            <p style="text-align:left;background: black;color: white;">&#60;div id="div1">
+  &#60;p id="p1">Esto es un parrafo.&#60;/p><br>
+  &#60;p id="p2">Este es otro parrafo.&#60;/p><br>
+&#60;/div><br>
+&#60;script><br>
+&nbsp;&nbsp;&nbsp;&nbsp;const para = document.createElement("p");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;const node = document.createTextNode("Esto es Nuevo.");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;para.appendChild(node);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;const parent = document.getElementById("div1");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;const child = document.getElementById("p1");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;parent.replaceChild(para, child);<br>
+&#60;/script></p><br></div>
+          <div data-aos="fade-right">
+          <br>
+          <h3>Ejemplo</h3>
+          </div>
+          <div class="col-lg-6 pl-1" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+              <p> &#60;!DOCTYPE html><br>
+                  &#60;html><br>
+                  &#60;body><br>
+                  &#60;h2>JavaScript HTML DOM&#60;/h2><br>
+                  &#60;h3>Reemplazar un elemento HTML.&#60;/h3>
+                  &#60;div id="div1"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&#60;p id="p1">Esto es un parrafo.&#60;/p><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&#60;p id="p2">Este es otro parrafo.&#60;/p><br>
+                  &#60;/div><br>
+                  &#60;script><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;const parent = document.getElementById("div1");<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;const child = document.getElementById("p1");<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;const para = document.createElement("p");<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;const node = document.createTextNode("Esto es nuevo.");<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;para.appendChild(node);<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;parent.replaceChild(para,child);<br>
+                  &#60;/script><br>
+                  &#60;/body><br>
+                  &#60;/html></p><br>
+            </div>
+                <div class="col-lg-5" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+                  <h2>JavaScript HTML DOM</h2>
+                  <h3>Reemplazar un elemento HTML.</h3>
+                  <div id="div4">
+                  <p id="p9">Esto es un parrafo.</p>
+                  <p id="p10">Este es otro parrafo.</p>
+                  </div>
+                  <input style="color:black;" type="button" value="Probar" onclick="Ej5();">
+                  <br>
+                </div>
+      </div>
+    </div>
+    </section>
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Grupo 1</span></strong>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../vendor/purecounter/purecounter.js"></script>
+  <script src="../vendor/aos/aos.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../vendor/typed.js/typed.min.js"></script>
+  <script src="../vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../js/mainp2.js"></script>
+  <script>
+    function Ej1(){
+      const para = document.createElement("p");
+      const node = document.createTextNode("Esto es nuevo.");
+      para.appendChild(node);
+      const element = document.getElementById("div1");
+      element.appendChild(para);
+    }
+    function Ej2(){
+      const para = document.createElement("p");
+      const node = document.createTextNode("Esto es nuevo.");
+      para.appendChild(node);
+      const element = document.getElementById("div2");
+      const child = document.getElementById("p3");
+      element.insertBefore(para,child);
+    }
+    function Ej3(){
+      document.getElementById("p5").remove();
+    }
+    function Ej4(){
+      const parent = document.getElementById("div3");
+      const child = document.getElementById("p7");
+      parent.removeChild(child);
+    }
+    function Ej5(){
+      const parent = document.getElementById("div4");
+      const child = document.getElementById("p9");
+      const para = document.createElement("p");
+      const node = document.createTextNode("Esto es nuevo.");
+      para.appendChild(node);
+      parent.replaceChild(para,child);
+    }
+  </script>
+  </script>
+
+
+</body>
+
+</html>
