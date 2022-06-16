@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Eventos Listener</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../img/fav.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<link href="../vendor/aos/aos.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../css/Parte II/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.7.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+  #myDiv1, #myDiv2 {
+  background-color: #3739E1;
+  padding: 50px;
+}
+
+#myP1, #myP2 {
+  background-color: white; 
+  font-size: 20px;
+  border: 1px solid;
+  padding: 20px;
+}
+#myDIV {
+  background-color: #3739E1;
+  border: 1px solid;
+  padding: 50px;
+  color: white;
+  font-size: 20px;
+}
+</style>
+<body >
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <a href="homeParteII.html"><img src="../img/logo.png" alt="" class="img-fluid rounded-circle"></a>
+        <h1 class="text-light">Events Listener</h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#linkMetodoAdd" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Método addEventListener()</span></a></li>
+          <li><a href="#agregarControlador" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Agregar un Controlador</span></a></li>
+          <li><a href="#agregarVariasC" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Agregar Muchos Controladores</span></a></li>
+          <li><a href="#burbujeos" class="nav-link scrollto"><i class="bx bxs-bank"></i> <span>Burbujeos de eventos</span></a></li>
+          <li><a href="#linkMetodoRemove" class="nav-link scrollto"><i class="bx bx-server"></i> <span>método removeEventListener()</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Eventos</h1>
+      <p>Reaccionar a eventos <span class="typed" data-typed-items="HTML usando JavaScript"></span></p>
+      <br>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="linkMetodoAdd" class="about">
+      <div class="container col-sm-12 row justify-content-around" data-aos="fade-right">
+        <div class="section-title">
+          <h2>El método addEventListener()</h2>
+          </div>
+        <h2>Ejemplo</h2>
+        <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;h2>Ejemplo addEventListener/h2><br>
+                &#60;p>Este es un ejemplo de addEventListener()./p><br>
+                &#60;button id="myBtn">Mostrar/button><br>
+                &#60; p id="demo">/p><br>
+                &#60;script><br>
+                document.getElementById("myBtn").<br>
+                addEventListener("click", displayDate);<br>
+                function displayDate() {<br>
+                document.getElementById("demo").innerHTML = Date();<br>
+                }<br>
+                &#60;/script><br>
+            </p>
+          </div>
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>Ejemplo addEventListener</h2>
+                <p>Este es un ejemplo de addEventListener()</p>
+                <button id="myBtn">Mostrar</button>
+                <p id="demo1"></p>
+          </div> 
+          <br>
+          <p style="text-align:justify;"><br>El addEventListener()método adjunta un controlador de eventos al elemento especificado.
+          El addEventListener()método adjunta un controlador de eventos a un elemento sin sobrescribir los controladores de eventos existentes. Puede agregar muchos controladores de eventos a un elemento. Puede agregar muchos controladores de eventos del mismo tipo a un elemento, es decir, dos eventos de "clic". Puede agregar detectores de eventos a cualquier objeto DOM, no solo elementos HTML. es decir, el objeto ventana. El addEventListener()método facilita el control de cómo reacciona el evento al burbujeo. Al usar el addEventListener()método, el JavaScript se separa del marcado HTML, para una mejor legibilidad y le permite agregar detectores de eventos incluso cuando no controla el marcado HTML. Puede eliminar fácilmente un detector de eventos utilizando el removeEventListener()método.</p>
+          </div>
+          <div class="container col-sm-12 row justify-content-around" data-aos="fade-left">
+        <div class="section-title">
+          <h2>Sintaxis</h2>
+          </div>
+          <div class="col-lg-12" style="border-style: solid;">
+            <p>element.addEventListener(event, function, useCapture);</p>
+          </div>
+          <br>
+          <p style="text-align:justify"><br>El primer parámetro es el tipo de evento (como " click" o " mousedown" o cualquier otro evento HTML DOM ). El segundo parámetro es la función que queremos llamar cuando ocurra el evento. El tercer parámetro es un valor booleano que especifica si se debe usar el burbujeo de eventos o la captura de eventos. Este parámetro es opcional.</p> 
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="agregarControlador" class="portfolio section-bg">
+      <div class="container col-sm-12 row justify-content-around">
+        <div class="section-title">
+          <h2>Agregar un controlador de eventos a un elemento</h2>
+        </div>
+        <h2>Ejemplo</h2>
+        <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;h2>Agregar un controlador ejemplo /h2><br>
+                &#60;p>Este ejemplo muestra el uso de addEvent./p><br>
+                &#60;button id="myBtn">Mostrar/button><br>
+                &#60;script><br>
+                &#60;document.getElementById("myBtn").<br>
+                addEventListener("click", function() {<br>
+                &#60;   alert("Este es un controlador");<br>
+                &#60;});<br>
+                &#60;/script><br>
+
+            </p>
+          </div>
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>Agregar un controlador ejemplo </h2>
+                <p>Este ejemplo muestra el uso de addEventListener().</p>
+                <button id="myBtn1">Mostrar</button>
+          </div>
+
+      </div>
+
+    </section><!-- End Facts Section -->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="agregarVariasC" class="facts">
+      <div class="container col-sm-12 row justify-content-around" data-aos="fade-right">
+
+        <div class="section-title">
+          <h2>Agregue muchos controladores de eventos al mismo elemento</h2>
+          <p>El addEventListener()método le permite agregar muchos eventos al mismo elemento, sin sobrescribir los eventos existentes:</p>
+        </div>
+        <h2>Ejemplo</h2>
+        <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;p>Agregar varios controladores a un elemento./p><br>
+                &#60;button id="myBtn">Mostrar/button><br>
+                &#60;script><br>
+                var x = document.getElementById("myBtn");<br>
+                x.addEventListener("click", myFunction);<br>
+                x.addEventListener("click", someOtherFunction);<br>
+                function myFunction() {<br>
+                  alert ("Este es mi primer controlador de evento");<br>
+                }<br>
+                function someOtherFunction() {<br>
+                  alert ("Este es el segundo controlador de evento");<br>
+                }<br>
+                &#60;/script><br>
+            </p>
+          </div>
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>Agregar varios controladores a un elemento</h2>
+                <button id="myBtn2">Mostrar</button>
+          </div>
+      </div>
+      <div class="container col-sm-12 row justify-content-around" data-aos="fade-left">
+        <div class="section-title">
+          <h2>Pasando parámetros</h2>
+        </div>
+        <h2>Ejemplo</h2>
+        <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;p>Pasando Parámetros./p><br>
+                &#60;p>clic en mostrar para realizar el calculo./p><br>
+                &#60;button id="myBtn">Mostrar/button><br>
+                &#60;p id="demo">/p><br>
+                &#60;script><br>
+                let p1 = 5;<br>
+                let p2 = 7;<br>
+                document.getElementById("myBtn").<br> 
+                addEventListener("click", function() {<br>
+                  myFunction(p1, p2);<br>
+                });<br>
+                function myFunction(a, b) {<br>
+                  document.getElementById("demo").innerHTML = a * b;<br>
+                }<br>
+                &#60;/script><br>
+            </p>
+          </div>
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>Pasando Parámetros</h2>
+                <p>clic en mostrar para realizar el calculo</p>
+                <button id="myBtn3">Mostrar</button>
+                <p id="demo3"></p>
+          </div>
+          
+      </div>
+    </section><!-- End Portfolio Section -->
+    <section id="burbujeos" class="portfolio section-bg">
+      <div class="container col-sm-12 row justify-content-around" data-aos="fade-up">
+        <div class="section-title">
+          <h2>¿Burbujeo de eventos o captura de eventos?</h2>
+          <p>Hay dos formas de propagación de eventos en HTML DOM, burbujeo y captura. </p>
+          <p>La propagación de eventos es una forma de definir el orden de los elementos cuando ocurre un evento. Si tiene un elemento </p>
+          <p> dentro de un elemento &#60;div> y el usuario hace clic en el elemento &#60;p>, ¿qué evento de "clic" de elemento debe manejarse primero? </p>
+          <ul>
+            <li>Al burbujear , el evento del elemento más interno se maneja primero y luego el externo: el evento de clic del elemento p> se maneja primero, luego el evento de clic del elemento &#60;div>.</li>
+            <li>Al capturar el evento del elemento más externo se maneja primero y luego el interno: el evento de clic del elemento &#60;div> se manejará primero, luego el evento de clic del elemento p>.</li>
+          </ul>
+          <p>Con el método addEventListener() puedes especificar el tipo de propagación usando el parámetro "useCapture":</p>
+        </div>
+        <div class="col-lg-5" style="border-style: solid;">
+         <p>addEventListener(event, function, useCapture);</p>
+         <br>
+         </div> 
+        <h2>Ejemplo</h2>
+        <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;head><br>
+                &#60;style><br>
+                #myDiv1, #myDiv2 {<br>
+                  background-color: #3739E1;<br>
+                  padding: 50px;<br>
+                }<br>
+                #myP1, #myP2 {<br>
+                  background-color: white; <br>
+                  font-size: 20px;<br>
+                  border: 1px solid;<br>
+                  padding: 20px;<br>
+                }<br>
+                &#60;/style><br>
+                &#60;meta content="text/html; charset=utf-8" http-equiv="Content-Type"><br>
+                &#60;/head><br>
+                &#60;body><br>
+                &#60;h2>Burbujeo de eventos en JS/h2><br>
+                &#60;div id="myDiv1"><br>
+                &#60;h2>Burbujeante:/h2><br>
+                &#60;p id="myP1">Muestrame!/p><br>
+                &#60;/div><br>
+                &#60;div id="myDiv2"><br>
+                &#60;h2>Capturante:/h2><br>
+                &#60;p id="myP2">Muestrame!/p><br>
+                &#60;/div><br>
+                &#60;script><br>
+                document.getElementById("myP1"). <br>addEventListener("click", function() {<br>
+                  alert("Diste clic en el elemento Blanco!");<br>
+                }, false);<br>
+                document.getElementById("myDiv1").<br>addEventListener("click", function() {<br>
+                  alert("Diste clic en el elemento Azul!");<br>
+                }, false);<br>
+                document.getElementById("myP2").<br>addEventListener("click", function() {<br>
+                  alert("Diste clic en el elemento Blanco!");<br>
+                }, true);<br>
+                document.getElementById("myDiv2").<br>addEventListener("click", function() {<br>
+                  alert("Diste clic en el elemento Azul!");<br>
+                }, true);<br>
+                &#60;/script><br>
+            </p>
+          </div>
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>Burbujeo de eventos en JS</h2>
+                <div id="myDiv1">
+                  <h2>Burbujeante:</h2>
+                  <p id="myP1">Muestrame!</p>
+                </div><br>
+
+                <div id="myDiv2">
+                  <h2>Capturando:</h2>
+                  <p id="myP2">Muestrame!</p>
+                </div>
+          </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="linkMetodoRemove" class="facts">
+      <div class="container col-sm-12 row justify-content-around" data-aos="fade-right" data-aos-delay="100">
+
+        <div class="section-title">
+          <h2>El método removeEventListener()</h2>
+          <p>El removeEventListener()método elimina los controladores de eventos que se han adjuntado con el método addEventListener().</p>
+        </div>
+        <h2>Ejemplo</h2>
+        <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;body><br>
+                &#60;h2>Evento removeEventListener en JavaScript/h2><br>
+                &#60;div id="myDIV"><br>
+                &#60;p>Este elemento div tiene un controlador de eventos onmousemove que muestra un número aleatorio cada vez que mueve el mouse dentro de este campo azul../p><br>
+                &#60;p>Haga clic en el botón para eliminar el controlador de eventos del div.p><br>
+                &#60;button onclick="removeHandler()" id="myBtn">Remover/button><br>
+                &#60;/div><br>
+                &#60;p id="demo"/p><br>
+                &#60;script><br>
+                document.getElementById("myDIV").<br>
+                addEventListener("mousemove", myFunction);<br>
+                function myFunction() {<br>
+                  document.getElementById("demo").<br>
+                  innerHTML = Math.random();<br>
+                }<br>
+                function removeHandler() {<br>
+                  document.getElementById("myDIV").<br>
+                  removeEventListener("mousemove", myFunction);<br>
+                }<br>
+                &#60;/script><br>
+            </p>
+          </div>
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>Evento removeEventListener en JavaScript</h2>
+                <div id="myDIV">
+                  <p>Este elemento div tiene un controlador de eventos onmousemove que muestra un número aleatorio cada vez que mueve el mouse dentro de este campo azul.</p>
+                  <p>Haga clic en el botón para eliminar el controlador de eventos del div.</p>
+                  <button onclick="removeHandler()" id="myBtn5">Remover</button>
+                </div>
+                <p id="demo5"></p>
+
+          </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        <strong><span>Grupo 1</span></strong>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+  <script src="../vendor/purecounter/purecounter.js"></script>
+  <script src="../vendor/aos/aos.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../vendor/typed.js/typed.min.js"></script>
+  <script src="../vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../js/mainp2.js"></script>
+  <script>
+      document.getElementById("myBtn").addEventListener("click", displayDate);
+      function displayDate() {
+      document.getElementById("demo1").innerHTML = Date();
+      }
+      document.getElementById("myBtn1").addEventListener("click", function() {
+        alert("Este es un ejemplo de agregar un controlador");
+      });
+      var x = document.getElementById("myBtn2");
+      x.addEventListener("click", myFunctionP2);
+      x.addEventListener("click", someOtherFunction);
+
+      function myFunctionP2() {
+        alert ("Este es el primer controlador de eventos");
+      }
+
+      function someOtherFunction() {
+        alert ("Este es el segundo controlador de eventos");
+      }
+
+      let p1 = 3;
+      let p2 = 7;
+      document.getElementById("myBtn3").addEventListener("click", function() {
+        myFunction3(p1, p2);
+      });
+
+      function myFunction3(a, b) {
+        document.getElementById("demo3").innerHTML = "Se pasaron dos parametros <br/> El primer término es: "+ a + " <br/>el  segundo término: "+b+" <br/>Al multiplicar resulta:  "+a * b;
+      }
+      //burbujeo
+      document.getElementById("myP1").addEventListener("click", function() {
+        alert("Diste clic en el elemento Blanco!");
+      }, false);
+
+      document.getElementById("myDiv1").addEventListener("click", function() {
+        alert("Diste clic en el elemento Azul!");
+      }, false);
+
+      document.getElementById("myP2").addEventListener("click", function() {
+        alert("Diste clic en el elemento Blanco!");
+      }, true);
+
+      document.getElementById("myDiv2").addEventListener("click", function() {
+        alert("Diste clic en el elemento Azul!");
+      }, true);
+      //Remove
+      document.getElementById("myDIV").addEventListener("mousemove", myFunction);
+      function myFunction() {
+        document.getElementById("demo5").innerHTML = Math.random();
+      }
+      function removeHandler() {
+        document.getElementById("myDIV").removeEventListener("mousemove", myFunction);
+      }
+  </script>
+</body>
+</html>
