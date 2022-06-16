@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Colecciones</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../img/fav.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../vendor/aos/aos.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../css/Parte II/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.7.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <a href="homeParteII.html"><img src="../img/logo.png" alt="" class="img-fluid rounded-circle"></a>
+        <h1 class="text-light">Grupo 1</h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#HTML" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>HTML DOM Collection</span></a></li>
+          <li><a href="#Longitud" class="nav-link scrollto"><i class="bx bx-move-vertical"></i> <span>Longitud del HTMLCollection</span></a></li>
+          <li><a href="#Nota" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Nota</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Colecciones</h1>
+      <h1>JavaScript HTML DOM</h1>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="HTML" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-right">
+          <h2>Concepto</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="../img/colec.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <p>El método getElementsByTagName() devuelve un HTMLCollectionobjeto.</p>
+            <p>Un objeto HTMLCollection es una lista similar a una matriz (colección) de elementos HTML.</p>
+            <p style="text-align:center;background: black;color: white;">const myCollection = document.getElementsByTagName("p");</p><br>
+          </div>
+          <div data-aos="fade-right">
+            <p>Se puede acceder a los elementos de la colección mediante un número de índice.</p>
+            <p style="text-align:center;background: black;color: white;">myCollection[1]</p>
+          <h3>Ejemplo</h3>
+          </div>
+          <div class="col-lg-6 pl-1" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+              <p> &#60;!DOCTYPE html><br>
+                  &#60;html><br>
+                  &#60;body><br>
+                  &#60;h2>JavaScript HTML DOM&#60;/h2><br>
+                  &#60;p>Hola Mundo!&#60;/p><br>
+                  &#60;p>Hola Jacque!&#60;/p><br>
+                  &#60;p id="demo">&#60;/p><br>
+                  &#60;script><br>
+                    const myCollection = document.getElementsByTagName("p");                    document.getElementById("demo").innerHTML = "El innerHTML del segundo parrafo es : " + myCollection[1].innerHTML;<br>
+                  &#60;/script>
+                  &#60;/body><br>
+                  &#60;/html></p><br>
+            </div>
+                <div class="col-lg-5" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+                  <h2>JavaScript HTML DOM</h2>
+                  <p>Hola Mundo!</p>
+                  <p>Hola Jacque!</p>
+                  <p id="demo"></p><br>
+                  <input style="color:black;" type="button" value="Probar" onclick="Ej1();">
+                  <br>
+                </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="Longitud" class="facts">
+      <div class="container">
+        <div class="row">
+        <div class="section-title" data-aos="fade-right">
+          <h2>Longitud de la Lista</h2>
+          <p>La propiedad length define el número de elementos en un HTMLCollection</p><br>
+          <p style="text-align:center;background: black;color: white;">myCollection.length</p><br>
+          <h3>Ejemplo</h3>
+        </div>
+        <div class="col-lg-6" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+              <p> &#60;!DOCTYPE html><br>
+                  &#60;html><br>
+                  &#60;body><br>
+                  &#60;h2>JavaScript HTML DOM&#60;/h2><br>
+                  &#60;p>Hola Mundo!&#60;/p><br>
+                  &#60;p>Hola Jacque!&#60;/p><br>
+                  &#60;p id="demo">&#60;/p><br>
+                  &#60;script><br>
+                    const myCollection = document.getElementsByTagName("p");
+                    document.getElementById("demo").innerHTML = "Este documento contiene" + myCollection.length + " parrafos.";<br>
+                  &#60;/script><br>
+                  &#60;/body><br>
+                  &#60;/html></p><br>
+        </div>
+        <div class="col-lg-5" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+                  <h2>JavaScript HTML DOM</h2>
+                  <p1>Hola Mundo!</p1><br>
+                  <p1>Hola Jacque!</p1><br>
+                  <p1 id="demo1"></p1><br>
+                  <input style="color:black;" type="button" value="Probar" onclick="Ej2();">
+                  <br>
+        </div>
+        <br>
+        <div data-aos="fade-right">
+          <p>La propiedad length es útil cuando desea recorrer los elementos de una colección:</p>
+        <p style="text-align:center;background: black;color: white;">const myCollection = document.getElementsByTagName("p");<br>for (let i = 0; i < myCollection.length; i++) {<br>
+        myCollection[i].style.color = "red";
+        }</p>
+        <h3>Ejemplo</h3>
+
+        </div>
+        <div class="col-lg-6" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+              <p> &#60;!DOCTYPE html><br>
+                  &#60;html><br>
+                  &#60;body><br>
+                  &#60;h2>JavaScript HTML DOM&#60;/h2><br>
+                  &#60;p>Hola Mundo!&#60;/p><br>
+                  &#60;p>Hola Jacque!&#60;/p><br>
+                  &#60;p id="demo">&#60;/p><br>
+                  &#60;p>Click al boton para cambiar el color de todos los elementos p.&#60;/p><br>
+                  &#60;button onclick="myFunction()">Probar&#60;/button>
+                  &#60;script><br>
+                  function myFunction() {<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const myCollection = document.getElementsByTagName("p");<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (let i = 0; i < myCollection.length; i++) {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myCollection[i].style.color = "blue";<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}<br>
+                  &#60;/script><br>
+                  &#60;/body><br>
+                  &#60;/html></p><br>
+        </div>
+        <div class="col-lg-5" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+                  <h2>JavaScript HTML DOM</h2>
+                  <p2>Hola Mundo!</p2><br>
+                  <p2>Hola Pepe!</p2><br>
+                  <p2>Click al boton para cambiar el color de todos los elementos p.</p2><br>
+                  <p2 id="demo1"></p2><br>
+                  <input style="color:black;" type="button" value="Probar" onclick="Ej3();">
+                  <br>
+        </div>
+      </div>
+      </div>
+    </section><!-- End Facts Section -->
+  <section id="Nota" class="facts">
+      <div class="container" data-aos="fade-right">
+        <div class="section-title">
+          <h2>Nota</h2>
+          <strong><p style="background:yellow">¡Una HTMLCollection NO es una matriz! <br>
+Una HTMLCollection puede parecer una matriz, pero no lo es. <br>
+Puede recorrer la lista y hacer referencia a los elementos con un número (como una matriz). <br>
+Sin embargo, no puede usar métodos de matriz como valueOf(), pop(), push() o join() en una HTMLCollection.</p></strong>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Grupo 1</span></strong>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../vendor/purecounter/purecounter.js"></script>
+  <script src="../vendor/aos/aos.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../vendor/typed.js/typed.min.js"></script>
+  <script src="../vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../js/mainp2.js"></script>
+  <script>
+    function Ej1(){
+      const myCollection = document.getElementsByTagName("p");
+      document.getElementById("demo").innerHTML = "El innerHTML del segundo parrafo es : " + myCollection[7].innerHTML;
+    }
+    function Ej2(){
+      const myCollection = document.getElementsByTagName("p1");
+                    document.getElementById("demo1").innerHTML = "Este documento contiene " + myCollection.length + " parrafos.";
+    }
+    function Ej3(){
+      const myCollection = document.getElementsByTagName("p2");
+      for (let i = 0; i < myCollection.length; i++) {
+        myCollection[i].style.color = "blue";
+  }
+    }
+  </script>
+  </script>
+
+
+</body>
+
+</html>
