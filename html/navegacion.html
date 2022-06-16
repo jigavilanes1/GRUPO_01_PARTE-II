@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Navegación</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../img/fav.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../vendor/aos/aos.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../css/Parte II/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.7.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <a href="homeParteII.html"><img src="../img/logo.png" alt="" class="img-fluid rounded-circle"></a>
+        <h1 class="text-light">Grupo 1</h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#HTML" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Nodos DOM</span></a></li>
+          <li><a href="#Relaciones" class="nav-link scrollto"><i class="bx bx-network-chart"></i> <span>Relaciones de Nodos</span></a></li>
+          <li><a href="#Navegación" class="nav-link scrollto"><i class="bx bx-vector"></i> <span>Navegación entre Nodos</span></a></li>
+          <li><a href="#CN" class="nav-link scrollto"><i class="bx bx-minus-front"></i><span>Child Node</span></a></li>
+          <li><a href="#Raiz" class="nav-link scrollto"><i class="bx bx-home-heart"></i><span>Nodos Raiz DOM</span></a></li>
+          <li><a href="#Propiedades" class="nav-link scrollto"><i class="bx bx-info-circle"></i><span>Propiedades</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Navegación</h1>
+      <h1>JavaScript HTML DOM</h1>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="HTML" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-right">
+          <h2>Nodos DOM</h2>
+          <p>De acuerdo con el estándar W3C HTML DOM, todo en un documento HTML es un nodo</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="../img/nav.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <ul>
+              <ul>
+                <li>&#9679; Todo el documento es un nodo de documento.</li>
+                <li>&#9679; Cada elemento HTML es un nodo de elemento.</li>
+                <li>&#9679; El texto dentro de los elementos HTML son nodos de texto.</li>
+                <li>&#9679; Cada atributo HTML es un nodo de atributo (obsoleto).</li>
+                <li>&#9679; Todos los comentarios son nodos de comentarios.</li>
+              </ul>
+            </ul>
+          </div>
+          <div data-aos="fade-right">
+          <br>
+          <p>Con el HTML DOM, JavaScript puede acceder a todos los nodos del árbol de nodos.Se pueden crear nuevos nodos y todos los nodos se pueden modificar o eliminar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Relaciones" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-right">
+          <h2>Relaciones de Nodos</h2>
+          <p>Los nodos del árbol de nodos tienen una relación jerárquica entre sí.Los términos padre, hijo y hermano se utilizan para describir las relaciones.</p>
+        </div>
+
+        <div class="row">
+          
+          <div class="col-lg-8 content" data-aos="fade-right">
+            <ul>
+              <li>&#9679; En un árbol de nodos, el nodo superior se llama raíz (o nodo raíz).</li>
+              <li>&#9679; Cada nodo tiene exactamente un padre, excepto la raíz (que no tiene padre)</li>
+              <li>&#9679; Un nodo puede tener varios hijos.</li>
+              <li>&#9679; Cada atributo HTML es un nodo de atributo (obsoleto).</li>
+              <li>&#9679; Los hermanos (hermanos o hermanas) son nodos con el mismo padre</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 pt-4 pt-lg-0" data-aos="fade-left">
+            <img src="../img/Relaciones.jpg" class="img-fluid" alt="">
+          </div>
+          <div data-aos="fade-right">
+            <h3>Ejemplo</h3>
+          <p style="text-align:left;background: black;color: white;">&#60;html><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&#60;head><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;title>Tutorial DOM&#60;/title><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&#60;/head><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&#60;body><br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;h1>Navegación DOM&#60;/h1><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;p>Hola Mundo!&#60;/p><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&#60;/body><br>
+&#60;/html></p>
+<p>En el ejemplo anterior se puede leer:</p>
+<ul>
+  <li>&#60;html> es el nodo raíz</li>
+  <li>&#60;html> no tiene padres</li>
+  <li>&#60;html> es el padre de &#60;head> y &#60;body></li>
+  <li>&#60;head> es el primer hijo de &#60;html></li>
+  <li>&#60;body> es el ultimo hijo de &#60;html></li>
+</ul>
+<p>y:</p>
+<ul>
+  <li>&#60;head>tiene un hijo:&#60;title></li>
+  <li>&#60;title> tiene un hijo (un nodo de texto): "Tutorial DOM"</li>
+  <li>&#60;body> tiene dos hijos: &#60;h1> y &#60;p></li>
+  <li>&#60;h1> tiene un hijo: "Navegación DOM"</li>
+  <li>&#60;p> tiene un hijo: "¡Hola mundo!"</li>
+  <li>&#60;h1> y &#60;p>son hermanos</li>
+</ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Navegación" class="resume">
+      <div class="container">
+        <div class="section-title" data-aos="fade-right">
+          <h2>Navegación entre Nodos</h2>
+          <p>Puede usar las siguientes propiedades de nodo para navegar entre nodos con JavaScript:</p>
+          <br>
+            <ul>
+              <li>parentNode.</li>
+              <li>childNodes[númerodelnodo]</li>
+              <li>firstChild</li>
+              <li>lastChild</li>
+              <li>nextSibling</li>
+              <li>previousSibling</li>
+            </ul>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="CN" class="services">
+      <div class="container">
+        <div class="row">
+        <div class="section-title" data-aos="fade-right">
+          <h2>Child Nodes y valores de los Nodos</h2>
+        </div>
+          <div data-aos="fade-right">
+            <p style="background-color: yellow;">Un error común en el procesamiento de DOM es esperar que un nodo de elemento contenga texto.</p>
+            <h3>Ejemplo</h3>
+            <p style="text-align:left;background: black;color: white;">&#60;title id="demo">Tutorial DOM&#60;/title></p>
+            <p>El nodo del elemento &#60;title> (en el ejemplo anterior) no contiene texto.</p>
+            <p>Contiene un nodo de texto con el valor "Tutorial DOM".</p>
+            <p>Se puede acceder al valor del nodo de texto mediante la propiedad innerHTML del nodo:</p>
+            <p style="text-align:left;background: black;color: white;">myTitle = document.getElementById("demo").innerHTML;</p><br>
+          </div>
+          <div class="col-lg-6 pl-1" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+              <p> &#60;!DOCTYPE html><br>
+                  &#60;html><br>
+                  &#60;body><br>
+                  &#60;h1 id="id01">Mi Primera Pagina&#60;/h1><br>
+                  &#60;p id="id02">&#60;/p><br>
+                  &#60;script><br>
+                  document.getElementById("id02").innerHTML = document.getElementById("id01").innerHTML;<br>
+                  &#60;/script><br>
+                  &#60;/body><br>
+                  &#60;/html></p><br>
+            </div>
+                <div class="col-lg-5" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+                  <h1 id="id01">Mi Primera Pagina</h1>
+                  <p id="id02"></p>
+                  <input style="color:black;" type="button" value="Probar" onclick="Ej1();">
+                  <br>
+                </div>
+          <div data-aos="fade-right">
+          <br>
+          <h3>Otros Ejemplos</h3>
+          <p>Tambien se puede con la propiedad nodeValue</p>
+          </div>
+          <div class="col-lg-6 pl-1" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+              <p> &#60;!DOCTYPE html><br>
+                  &#60;html><br>
+                  &#60;body><br>
+                  &#60;h1 id="id01">Mi Primera Pagina&#60;/h1><br>
+                  &#60;p id="id02">&#60;/p><br>
+                  &#60;script><br>
+                  document.getElementById("id02").innerHTML = document.getElementById("id01").firstChild.nodeValue;<br>
+                  &#60;/script><br>
+                  &#60;/body><br>
+                  &#60;/html></p><br>
+            </div>
+                <div class="col-lg-5" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+                  <h1 id="id03">Mi Primera Pagina</h1>
+                  <p id="id04"></p>
+                  <input style="color:black;" type="button" value="Probar" onclick="Ej2();">
+                  <br>
+                </div>
+            <div data-aos="fade-right">
+          <br>
+          <p>O accediendo al hijo con childNode[]</p>
+          </div>
+          <div class="col-lg-6 pl-1" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+              <p> &#60;!DOCTYPE html><br>
+                  &#60;html><br>
+                  &#60;body><br>
+                  &#60;h1 id="id01">Mi Primera Pagina&#60;/h1><br>
+                  &#60;p id="id02">&#60;/p><br>
+                  &#60;script><br>
+                  document.getElementById("id02").innerHTML = document.getElementById("id01").childNodes[0].nodeValue;<br>
+                  &#60;/script><br>
+                  &#60;/body><br>
+                  &#60;/html></p><br>
+            </div>
+                <div class="col-lg-5" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+                  <h1 id="id05">Mi Primera Pagina</h1>
+                  <p id="id06"></p>
+                  <input style="color:black;" type="button" value="Probar" onclick="Ej3();">
+                  <br>
+                </div>
+            <div data-aos="fade-right">
+              <br>
+            <p style="background-color: yellow;"><strong>Nota</strong><br>
+            Podemos usar la propiedad innerHTML para recuperar el contenido de un elemento HTML.Sin embargo, aprender los métodos anteriores es útil para comprender la estructura de árbol y la navegación del DOM.</p>
+            </div>
+      </div>
+    </div>
+    </section><!-- End Facts Section -->
+
+    <section id="Raiz" class="contact">
+      <div class="container">
+        <div class="row">
+        <div class="section-title" data-aos="fade-right">
+          <h2>Nodos raíz DOM</h2>
+        </div>
+          <div data-aos="fade-right">
+            <p>Hay dos propiedades especiales que permiten el acceso al documento completo:</p>
+            <ul>
+              <li>document.body- El cuerpo del documento.</li>
+              <li>document.documentElement- El documento completo</li>
+            </ul>
+          </div>
+          <div data-aos="fade-right">
+          <h3>Ejemplo</h3>
+          </div>
+          <div class="col-lg-6 pl-1" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+              <p> &#60;!DOCTYPE html><br>
+                  &#60;html><br>
+                  &#60;body><br>
+                  &#60;h2>JavaScript HTML DOM&#60;/h2><br>
+                  &#60;p>Desplegar document.body&#60;/p><br>
+                  &#60;p id="demo">&#60;/p><br>
+                  &#60;script><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("demo").innerHTML = document.body.innerHTML;<br>
+                  &#60;/script><br>
+                  &#60;/body><br>
+                  &#60;/html></p><br>
+            </div>
+                <div class="col-lg-5" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+                  <div id="db">
+                    <h2>JavaScript HTML DOM</h2>
+                    <p>Desplegar document.body</p>
+                  </div>
+                  <p id="demo"></p>
+                  <input style="color:black;" type="button" value="Probar" onclick="Ej4();">
+                  <br>
+                </div>
+                <div><br></div>
+            <div class="col-lg-6 pl-1" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+              <p> &#60;!DOCTYPE html><br>
+                  &#60;html><br>
+                  &#60;body><br>
+                  &#60;h2>JavaScript HTML DOM&#60;/h2><br>
+                  &#60;p>Desplegar document.documentElement&#60;/p><br>
+                  &#60;p id="demo">&#60;/p><br>
+                  &#60;script><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("demo").innerHTML = document.documentElement.innerHTML;<br>
+                  &#60;/script><br>
+                  &#60;/body><br>
+                  &#60;/html></p><br>
+            </div>
+                <div class="col-lg-5" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+                  <div id="db1">
+                    <h2>JavaScript HTML DOM</h2>
+                    <p>Desplegar document.documentElement</p>
+                  </div>
+                  <p id="demo1"></p>
+                  <input style="color:black;" type="button" value="Probar" onclick="Ej5();">
+                  <br>
+                </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="Propiedades" class="facts">
+      <div class="container">
+        <div class="row">
+        <div class="section-title" data-aos="fade-right">
+          <h2>Propiedad nodeName</h2>
+        </div>
+          <div data-aos="fade-right">
+            <p>La propiedad nodeName especifica el nombre de un nodo.</p>
+            <ul>
+              <li>nodeName es solo delectura</li>
+              <li>nodeName de un nodo de elemento es el mismo que el nombre de la etiqueta</li>
+              <li>nodeName de un nodo de atributo es el nombre del atributo</li>
+              <li>nodeName de un nodo de texto siempre es #text</li>
+              <li>nodeName del nodo del documento siempre es #document</li>
+            </ul>
+            <p style="text-align:left;background: black;color: white;">&#60;h1 id="id01">Mi Primera Pagina&#60;/h1><br>
+            &#60;p id="id02">&#60;/p><br>
+            &#60;script><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("id02").innerHTML = document.getElementById("id01").nodeName;<br>
+            &#60;/script></p><br>
+</div>
+          <div data-aos="fade-right">
+          <br>
+          <h3>Ejemplo</h3>
+          </div>
+          <div class="col-lg-6 pl-1" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+              <p> &#60;!DOCTYPE html><br>
+                  &#60;html><br>
+                  &#60;body><br>
+                  &#60;h1 id="id01">Mi Primera Pagina&#60;/h1><br>
+                  &#60;p id="id02">&#60;/p><br>
+                  &#60;script><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("id02").innerHTML = document.getElementById("id01").nodeName;<br>
+                  &#60;/script><br>
+                  &#60;/body><br>
+                  &#60;/html></p><br>
+            </div>
+                <div class="col-lg-5" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+                  <h1 id="id1">Mi Primera Pagina</h1><br>
+                  <p id="id2"></p>
+                  <input style="color:black;" type="button" value="Probar" onclick="Ej6();">
+                  <br>
+                </div>
+            <div data-aos="fade-right">
+              <br>
+            <p style="background-color: yellow;"><strong>Nota</strong><br>
+            nodeName siempre contiene el nombre de la etiqueta en mayúsculas de un elemento HTML.</p>
+            </div>
+            <div class="section-title" data-aos="fade-right">
+          <h2>Propiedad nodeValue</h2>
+        </div>
+          <div data-aos="fade-right">
+            <p>La propiedad nodeValue especifica el valor de un nodo.</p>
+            <ul>
+              <li>nodeValue para nodos de elementos es null</li>
+              <li>nodeValue para nodos de texto es el texto mismo</li>
+              <li>nodeValue para los nodos de atributo es el valor del atributo</li>
+            </ul>
+          </div>
+          <div class="section-title" data-aos="fade-right">
+          <h2>Propiedad nodeType</h2>
+        </div>
+          <div data-aos="fade-right">
+            <p>La propiedad nodeType es solo de lectura. Devuelve el tipo de un nodo.</p>
+            <p style="text-align:left;background: black;color: white;">&#60;h1 id="id01">Mi Primera Pagina&#60;/h1><br>
+            &#60;p id="id02">&#60;/p><br>
+            &#60;script><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("id02").innerHTML = document.getElementById("id01").nodeType;<br>
+            &#60;/script></p><br>
+          </div>
+          <div data-aos="fade-right">
+          <br>
+          <h3>Ejemplo</h3>
+          </div>
+          <div class="col-lg-6 pl-1" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+              <p> &#60;!DOCTYPE html><br>
+                  &#60;html><br>
+                  &#60;body><br>
+                  &#60;h1 id="id01">Mi Primera Pagina&#60;/h1><br>
+                  &#60;p id="id02">&#60;/p><br>
+                  &#60;script><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("id02").innerHTML = document.geById("id01").nodeType;<br>
+                  &#60;/script><br>
+                  &#60;/body><br>
+                  &#60;/html></p><br>
+            </div>
+                <div class="col-lg-5" style="border-style: solid;margin-left: 10px;" data-aos="fade-up" data-aos-delay="100">
+                  <h1 id="id3">Mi Primera Pagina</h1>
+                  <p id="id4"></p>
+                  <input style="color:black;" type="button" value="Probar" onclick="Ej7();">
+                  <br>
+                </div>
+            <div data-aos="fade-right">
+              <p>Las propiedades de tipo de nodo más importantes son:</p>
+              <table class="table table-striped" style="font-size:14px">
+              <thead>
+                <tr>
+                  <th scope="col">Nodo</th>
+                  <th scope="col">Tipo</th>
+                  <th scope="col">Ejemplo</th>
+                </tr>
+              </thead>
+              <tr>
+                <th scope="col">ELEMENT_NODE</th>
+                <th scope="col">1</th>
+                <th scope="col">&#60;h1 class="heading">W3Schools&#60;/h1></th>
+              </tr>
+              <tr>
+                <th scope="col">ATTRIBUTE_NODE</th>
+                <th scope="col">2</th>
+                <th scope="col">class = "heading"</th>
+              </tr>
+              <tr>
+                <th scope="col">TEXT_NODE</th>
+                <th scope="col">3</th>
+                <th scope="col">W3Schools</th>
+              </tr>
+              <tr>
+                <th scope="col">COMMENT_NODE</th>
+                <th scope="col">8</th>
+                <th scope="col">&#60;!-- Esto es un comentario --></th>
+              </tr>
+              <tr>
+                <th scope="col">DOCUMENT_NODE</th>
+                <th scope="col">9</th>
+                <th scope="col">El mismo documento HTML</th>
+              </tr>
+              <tr>
+                <th scope="col">DOCUMENT_TYPE_NODE</th>
+                <th scope="col">10</th>
+                <th scope="col">&#60;!Doctype html></th>
+              </tr>
+            </table>
+            </div>
+      </div>
+    </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Grupo 1</span></strong>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../vendor/purecounter/purecounter.js"></script>
+  <script src="../vendor/aos/aos.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../vendor/typed.js/typed.min.js"></script>
+  <script src="../vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../js/mainp2.js"></script>
+  <script>
+    function Ej1(){
+      document.getElementById("id02").innerHTML = document.getElementById("id01").innerHTML;
+    }
+    function Ej2(){
+      document.getElementById("id04").innerHTML = document.getElementById("id03").firstChild.nodeValue;
+    }
+    function Ej3(){
+      document.getElementById("id06").innerHTML = document.getElementById("id05").childNodes[0].nodeValue;
+    }
+    function Ej4(){
+      document.getElementById("demo").innerHTML = document.getElementById("db").innerHTML;
+    }
+    function Ej5(){
+      document.getElementById("demo1").innerHTML = document.getElementById("db1").innerHTML;
+    }
+    function Ej6(){
+      document.getElementById("id2").innerHTML = document.getElementById("id1").nodeName;
+    }
+    function Ej7(){
+      document.getElementById("id4").innerHTML = document.getElementById("id3").nodeType;
+    }
+  </script>
+  </script>
+
+
+</body>
+
+</html>
